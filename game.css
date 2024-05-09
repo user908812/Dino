@@ -8,8 +8,15 @@ body {
   align-items: center;
   justify-content: center;
   background: url('bg.png');
-  background-position: center;
-  filter: blur(500%);
+  background-repeat: no-repeat;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE */
+  user-select: none;
+}
+::selection {
+    background-color: transparent;
 }
 h1 {
     display: flex;
